@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+  <head>
+    <title>OSM, je vous aime…</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Joël Gombin, Datactivist" />
+    <script src="libs/header-attrs-2.22/header-attrs.js"></script>
+    <link href="libs/remark-css-0.0.1/default.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist.css" rel="stylesheet" />
+    <link href="libs/remark-css-0.0.1/datactivist-fonts.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, orientation=auto"/>
+    <meta name="description" content="State of the Map 2023"/>
+    <meta name="github-repo" content="datactivist/sotm"/>
+    <meta name="twitter:title" content="OSM, je vous aime..."/>
+    <meta name="twitter:description" content="State of the Map 2023"/>
+    <meta name="twitter:url" content="https://datactivist.coop/sotm"/>
+    <meta name="twitter:image" content="./img/clerc.jpg"/>
+    <meta name="twitter:image:alt" content="Julien Clerc"/>
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:creator" content="@datactivi_st"/>
+    <meta name="twitter:site" content="@datactivi_st"/>
+    <meta property="og:title" content="OSM, je vous aime..."/>
+    <meta property="og:description" content="State of the Map 2023"/>
+    <meta property="og:url" content="https://datactivist.coop/sotm"/>
+    <meta property="og:image" content="./img/clerc.jpg"/>
+    <meta property="og:image:alt" content="Julien Clerc"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:locale" content="fr_FR"/>
+    <meta property="og:site_name" content="Datactivist"/>
+    <meta property="article:author" content="Datactivist"/>
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+# OSM, je vous aime…
+### Joël Gombin, Datactivist
+### #SOTMFR23, 2023-06-09
+
+---
+
+
+
+
+layout: true
+
+&lt;style&gt;
+.remark-slide-number {
+  position: inherit;
+}
+
+.remark-slide-number .progress-bar-container {
+  position: absolute;
+  bottom: 0;
+  height: 4px;
+  display: block;
+  left: 0;
+  right: 0;
+}
+
+.remark-slide-number .progress-bar {
+  height: 100%;
+  background-color: #e95459;
+}
+
+&lt;/style&gt;
+
+
+&lt;div class='my-footer'&gt;&lt;span&gt;State of the Map 2023&lt;/span&gt; &lt;center&gt;&lt;div class=logo&gt;&lt;a href='https://datactivist.coop/'&gt;&lt;img src='https://github.com/datactivist/slides_datactivist/raw/master/inst/rmarkdown/templates/xaringan/resources/img/fond_noir_monochrome.png' width='100px'&gt;&lt;/a&gt;&lt;/div&gt;&lt;/center&gt;&lt;/span&gt;&lt;/div&gt; 
+
+
+---
+
+class: center, middle
+
+Ces slides en ligne : http://datactivist.coop/sotm
+
+Sources : https://github.com/datactivist/sotm
+
+
+Les productions de Datactivist sont librement réutilisables selon les termes de la licence [Creative Commons 4.0 BY-SA](https://creativecommons.org/licenses/by-sa/4.0/legalcode.fr).
+
+&lt;BR&gt;
+&lt;BR&gt;
+
+![](https://mirrors.creativecommons.org/presskit/buttons/88x31/png/by-sa.png)
+
+---
+
+### Bienvenus en Provence !
+
+.pull-left[
+
+![](https://odoo.datactivist.coop/web/image/10047-5f46f527/S3E2.png)
+]
+.pull-right[
+
+![](https://odoo.datactivist.coop/web/image/10045-2838dd20/S3E3.png)
+
+]
+
+---
+
+### Je n'ai jamais été très doué pour les déclarations d'amour...
+
+.center[
+![](https://media.tenor.com/iRhzIRbjwoQAAAAC/les-bronzes-les-bronzes-font-du-ski.gif)
+]
+
+---
+
+### Déjà, OSM, tu m'intimides...
+
+.center[
+![](https://media3.giphy.com/media/HXMCTsypX0SpCQsKDl/giphy.gif?cid=ecf05e47wl0t71i43bvplorw3epk8nyluh3prxll13mcoo69&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g)
+]
+
+???
+
+J'ai une vraie fascination pour ce projet. J'en parle dans toutes mes formations/sensibilisations à l'open data, et ça fait systématiquement mouche. Il y a un vrai effet wahou, et au travers des différentes thématiques abordées, ça peut parler à tout le monde.  
+
+Aussi, regardez ce que vous avez accompli ! OSM est LA  référence en matière de connaissance géographique du monde. 
+Et vous y arrivez avec des moyens infiniment inférieurs à ceux de Google Maps, Apple Maps ou autre. 
+
+De plus, l'idée que la contribution, la coopération et l'ouverture sont la clé pour une cartographie mondiale de haute qualité est aujourd'hui largement acceptée. La création d'Overture avec Meta, Amazon, Microsoft, Tom Tom, ESRI (!!!) en est la preuve. En France, l'évolution de l'IGN en est la preuve (en 2013, il y a 10 ans, le DG de l'IGN faisait des tribunes au vitriol dans la Gazette des communes contre OSM et Gaël Musquet...). Vous avez gagné !!
+
+---
+
+### Même si, parfois, tu manques de confiance en toi.
+
+.center[
+![](https://media1.giphy.com/media/l3q2JdxX8XIzHQbYs/giphy.gif?cid=ecf05e474ayo7amabqlwqduw13oize6asvmayiy7c5ws6i99&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g)
+]
+
+???
+
+Tu te sens mal aimée
+Tu aimerais être hype, shiny, un popular kid
+Tu aimerais que les gens qui te sont proches (les administrations publiques, la recherche) manifestent plus et mieux leur amour
+Tu te dis que "c'est pas toi, c'est moi"
+
+---
+
+### Alors, OSM, tits up!
+
+.center[
+
+![](https://y.yarn.co/c6c7bd9f-f3b9-4d35-9b94-e4612c9d1555_text.gif)
+
+]
+
+???
+
+Fais toi belle et joue de tes atouts !
+Communique. Démontre. Convainc. 
+
+---
+
+### Car tu souffres peut-être du syndrome de Cyrano
+
+.center[
+
+![](https://media.tenor.com/P909J_yWN-cAAAAC/cyrano-cyrano-de-bergerac.gif)
+
+]
+
+???
+
+Cyrano, trop bon camarade et manquant de confiance en lui, aide Christian à être aimée de la belle Roxane en lui écrivant et soufflant ses mots d'amour. Roxane comprendra, mais trop tard, qu'en fait c'était Cyrano qu'elle aimait à travers les mots prononcés par Christian... 
+
+De même, tout le monde profite au quotidien d'OSM... mais généralement sans le savoir ! Vous êtes une infrastructure, le truc auquel personne ne pense jamais sauf quand c'est cassé (Susan Leigh Star, Geoffrey Bowker). Comme le souligne Star, "ce qui est infrastructure pour l’un est enjeu ou obstacle pour l’autre". 
+
+On a d'ailleurs besoin d'enquêtes pour mettre en valeur OSM : cf. projet d'enquête du SOGA sur les communs de données dont OSM (Emmanuel Pierrat). 
+
+---
+
+### Alors, à quoi ça pourrait ressembler, "tits up" (ou "suit up") ?
+
+.center[
+
+![](https://media4.giphy.com/media/fSRsJdfPWnQDs62Pvw/giphy.gif?cid=ecf05e474kdg1loz46m4cm2hz6ldnr48pg073e4llj985le1&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g)
+
+]
+
+???
+
+par où on commence ? jusqu'où faut-il aller ? 
+
+
+---
+
+### Au commencement était la communauté
+
+.center[
+
+![](https://media1.giphy.com/media/m1yximDFr1K07sdq5S/giphy.gif?cid=ecf05e47hzjfdzs9x8euyqq240xbzdnddjkjy9sm0eshsqr0&amp;ep=v1_gifs_search&amp;rid=giphy.gif&amp;ct=g)
+
+]
+
+???
+
+C'est la force d'OSM : sans communauté pas d'OSM !
+
+Mais il faut capitaliser dessus. 
+
+---
+
+### Il faut en prendre soin, la soutenir, l'animer, l'élargir... 
+
+.center[
+
+![](https://j.gifs.com/W6ROYg.gif)
+
+]
+
+???
+
+Sortir de l'entre-soi n'est pas confortable. Mais ça peut créer des résultats remarquables !
+Genre : d'autant plus nécessaire qu'on sait que les hommes et les femmes n'ont pas du tout le même rapport aux espaces publics par exemple 
+Exemple de Wikimedia
+
+---
+
+### Les écosystèmes
+
+
+![:abs 15%, 10%, 20%](./img/modifs.png)
+
+
+
+![:abs 70%, 30%, 20%](./img/openetymologymap.png)
+
+
+
+???
+
+Il faut multiplier les intersections et interactions avec d'autres milieux pour créer un écosystème le plus riche possible. 
+Une surprise pour moi par exemple : les faibles relations avec le monde de la science ouverte (et pas seulement les géographes !)
+
+
+---
+
+### Les données
+
+.center[
+.reduite[
+
+![](./img/sticker.png)
+
+]
+]
+
+???
+
+Votre force est la capacité à créer et développer de nouvelles sémantiques, créant une très grande versatilité. Vous avez intérêt à créer des alliances avec des acteurs "métiers" pour faire d'OSM la référence par défaut, adaptée aux métiers, qui seront ainsi plus incités à contribuer et à réutiliser. Ça suppose d'accroître la porosité de la communauté avec d'autres communautés...
+
+Il faut aussi encourager les exports pré-mâchés pour des communautés pas expertes (OverPassTurbo n'est pas si facile) : les initiatives comme GeoDataMine ou OSM Data sont super (mais sans doute pas assez connues !). Egalement explorer d'autres interfaces ? Chatbot utilisant les possibilités des LLM pour créer et tester à la volée des requêtes OverPass ? 
+
+
+---
+
+### Les infrastructures
+
+.center[
+
+![](./img/infosreseaux.png)
+
+]
+
+
+???
+
+L'infra c'est le domaine de la friction. Il y en a encore pas mal...
+
+Votre choix d'infrastructure presque distribué est pertinent. Mais peut-être faut-il le faciliter : partenariat avec AWS (ou autre) pour déployer des instances d'OSM, ou de uMap, and co, en one-click ? 
+
+
+Les outils de contribution, qui sont aussi une infra, sont très nombreux et très bons chacun à leur manière, mais... on doit pouvoir faire plus simple, non ? La gamification est chouette mais elle mène jusqu'à un certain point seulement. Comment peut-on plus le lier aux usages (sur le modèle de Waze par ex) ? Les actes de contribuer et consommer sont trop dissociés. 
+
+
+---
+
+### Les organisations
+
+
+.center[
+.reduite[
+
+![](https://odoo.datactivist.coop/web/image/10035-6f9836e2/S4E1.png)
+
+]
+]
+
+???
+
+Il y a besoin d'un (ou plusieurs) mode d'interface, de collaboration, avec des organisations (publiques ou privées). 
+
+Le programme de Wikipédiens en résidence lancé par Wikimedia France est très inspirant.
+La naissance de la fédération des professionnels d'OSM aussi. Mais à quand une asso des services publics pro-OSM ? Un programme pour les chercheurs et étudiants ? pour les entreprises (cf Enedis mais très ad hoc) ? 
+Passera peut-être aussi par du business ? 
+
+---
+class: inverse, center, middle
+
+# Merci !
+
+Contact : [joel@datactivist.coop](mailto:joel@datactivist.coop)
+
+
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script src="macros.js"></script>
+<script src="matomo.js"></script>
+<script src="https://platform.twitter.com/widgets.js"></script>
+<script>var slideshow = remark.create({
+"highlightStyle": "github",
+"highlightLines": true,
+"countIncrementalSlides": false,
+"slideNumberFormat": "<div class=\"progress-bar-container\">\n  <div class=\"progress-bar\" style=\"width: calc(%current% / %total% * 100%);\">\n  </div>\n</div>\n"
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();</script>
+
+<script>
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
